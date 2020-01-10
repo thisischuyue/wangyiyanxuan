@@ -1,0 +1,38 @@
+#top {
+    height: 176px;
+    .header{
+        width:$page_content;
+        background-color: map-get($color, b);
+        height: 36px;
+        .headerCenter {
+            @extend %box;
+            font-size: $page_size - 2;
+            .login {
+                float: right;
+            }
+        }
+    }
+
+    a{
+        @include inline-block;
+        line-height: 36px;
+        color: map-get($color, a);
+        text-decoration: none;
+        font-family: "Microsoft Yahei","微软雅黑","verdana";
+
+    }
+
+    a:hover {
+        color: map-get($color, d);
+    }
+
+    span {
+        @include inline-block;
+        color: map-get($color, c);
+        margin:0 10px;
+    }
+    .nav {
+        width:$page_width;
+        height: 140px;
+    }
+}
