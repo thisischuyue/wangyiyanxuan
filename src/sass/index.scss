@@ -5,14 +5,14 @@
 $page_width:1090px;
 $page_content:100%;
 $page_size:14px;
-$page_color:#ffd6b5;
+$page_color:#CC9756;
 
 $color:(a:#ccc,b:#333,c:#5c5c5c,d:#ffffff,e:#00cc00,f:#3300ff);
 @import "top";
 
 %box {
     width:$page_width;
-    height: 100px;
+
     margin: 0 auto;
 }
 
