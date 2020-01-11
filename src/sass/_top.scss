@@ -1,4 +1,5 @@
 #top {
+    
     height: 176px;
     .header{
         width:$page_content;
@@ -48,6 +49,7 @@
     .nav {
         @extend %box;
         height: 140px;
+        position: relative;
 
         .logoimages {
 
@@ -116,9 +118,45 @@
                 z-index: 2;
             }
 
-            .hotKeywordList {
-                
+            .hotKeywordListWrap {
+                width: 444px;
+                height: 18px;
+                margin-top: 46px;
+                margin-left: 8px;
+                overflow: hidden;
+
+                .hotKeywordList {
+                    height: 144px;
+                    position: relative;
+                    overflow: hidden;
+    
+                    .hotKeywordRow {
+                        height: 18px;
+                        line-height: 18px;
+                        margin-bottom: 18px;
+
+                        .hotKeyword {
+                            display: inline-block;
+                            color: #999;
+                            padding: 0 10px;
+                            border-right: 1px solid #ccc;
+                            cursor: pointer;
+                            line-height: $page_size - 2;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            max-width: 444px;
+                            font-size: $page_size - 2;
+                        }
+
+                        .hotKeyword:last-child {
+                            border: 0;
+                        }
+                    }
+                }
             }
+
+         
 
             
             .searchButton {
@@ -183,6 +221,35 @@
                 background-color: red;
             }
             
+        }
+
+        .navtable {
+         
+            font-weight: 700;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+
+            li {
+                float: left;
+                text-align: center;
+                padding: 0 26px;
+                font-size: 14px;
+
+                a {
+                    display: block;
+                    // padding-bottom: 7px;
+                    color: #000;
+                }
+            }
+
+            li:first-child {
+                padding-left: 0;
+            }
+
+            li:last-child {
+                padding-right: 0;
+            }
         }
 
 

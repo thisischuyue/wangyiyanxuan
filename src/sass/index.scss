@@ -6,105 +6,37 @@ $page_width:1090px;
 $page_content:100%;
 $page_size:14px;
 $page_color:#CC9756;
-
-$color:(a:#ccc,b:#333,c:#5c5c5c,d:#ffffff,e:#00cc00,f:#3300ff);
-@import "top";
-
 %box {
     width:$page_width;
 
     margin: 0 auto;
 }
 
-
-// #top {
-//     width:$page_content;
-//     height: 100px;
-//     background: map-get($color, a);
-// }
-
-
-
-
-
-#banner{
-    width:1920px;
-    height: 100px;
-    background: map-get($color, c);
+%arrow {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 130px;
+        cursor: pointer;
+        opacity: 0.8;
+        background-color: #E2C199;
+        border-radius: 50%;
+    
 }
 
-#bigPromotionModule {
-    width:$page_content;
-    height: 100px;
-    background: map-get($color, d);
-}
+$color:(a:#ccc,b:#333,c:#5c5c5c,d:#ffffff,e:#999,f:#3300ff);
+@import "top";
+@import "banner";
+@import "bigPromotionModule";
+@import "newProducts";
+@import "louti";
 
-#newProducts {
-    @extend %box;
-    background: map-get($color, e);
-}
 
-#popularItem {
-    width:$page_content;
-    height: 100px;
-    background: map-get($color, f);
-}
 
-#flashSaleContainer {
-    @extend %box;
-    background: map-get($color, a);
-}
 
-#saleCenter {
-    width:$page_content;
-    height: 100px;
-    background: map-get($color, b);
-}
 
-#newProducts {
-    @extend %box;
-    background: map-get($color, e);
-}
 
-.life {
-    @extend %box;
-    background: map-get($color, f);
-}
 
-// #clothes {
-//     @extend %box;
-//     background: map-get($color, f);
-// }
-
-// #food {
-//     @extend %box;
-//     background: map-get($color, f);
-// }
-
-// #clean {
-//     @extend %box;
-//     background: map-get($color, f);
-// }
-
-// #child {
-//     @extend %box;
-//     background: map-get($color, f);
-// }
-
-// #sports {
-//     @extend %box;
-//     background: map-get($color, f);
-// }
-
-// #digital {
-//     @extend %box;
-//     background: map-get($color, f);
-// }
-
-// #global {
-//     @extend %box;
-//     background: map-get($color, f);
-// }
 
 #selectionHome {
     @extend %box;
