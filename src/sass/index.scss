@@ -8,7 +8,6 @@ $page_size:14px;
 $page_color:#CC9756;
 %box {
     width:$page_width;
-
     margin: 0 auto;
 }
 
@@ -24,46 +23,25 @@ $page_color:#CC9756;
     
 }
 
+%clear {
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+}
+
+
+
 $color:(a:#ccc,b:#333,c:#5c5c5c,d:#ffffff,e:#999,f:#3300ff);
 @import "top";
 @import "banner";
 @import "bigPromotionModule";
 @import "newProducts";
 @import "louti";
+@import "clothes";
+@import "selectionHome";
+@import "bottom";
 
 
-
-
-
-
-
-
-#selectionHome {
-    @extend %box;
-    background: map-get($color, a);
-}
-
-#Comment {
-    width:$page_content;
-    height: 100px;
-    background: map-get($color, b);
-}
-
-#selectionHome {
-    @extend %box;
-    background: map-get($color, c);
-}
-
-
-.footer1 {
-    width:$page_content;
-    height: 100px;
-    background: map-get($color, d);
-}
-
-
-.footer2 {
-    width:$page_content;
-    height: 100px;
-    background: map-get($color, e);
-}

@@ -1,0 +1,240 @@
+#bottom {
+    width: $page_content;
+    .bottomItem {
+        width: $page_content;
+        border: 1px solid #e8e8e8;
+        .bottomItemMain {
+            @extend %box;
+            padding-top: 60px;
+            padding-bottom: 34px;
+            box-sizing: border-box;
+        }
+           
+    }
+}
+
+.bottomList {
+    height: 204px;
+
+    li{
+        width: 33.3%;
+        height: 204px;
+        float: left;
+        border-left: 1px solid #e9e9e9;
+    }
+
+    .leftBox {
+        text-align: center;
+    }
+
+    li:first-child {
+        border: 0;
+    }
+    .bottomItemLeft {  
+        a {
+            display: inline-block;
+            width: 80px;
+            height: 100px;
+            padding-top: 25px;
+            text-align: center;
+            border: 1px solid #E8E8E8;
+            box-sizing: border-box;
+            position: relative;
+            margin-right: 29px;
+        }
+
+    }
+
+    .coin {
+        width: 31px;
+        height: 26px;
+        position: absolute;
+        left: 25px;
+        text-align: center;
+    }
+
+    .online {
+        background: url(../images/bottomsprite.png) 0 -290px;
+    }
+
+    .feedback {
+        background: url(../images/bottomsprite.png) 0 -98px;
+    }
+
+    .onlineServer {
+        position: absolute;
+        left: 12px;
+        top: 70px;
+        font-size: $page_size;
+        color: #000;
+    }
+
+    
+}
+
+h4 {
+    text-align: center;
+    font-size: $page_size+2;
+    font-weight: 400;
+    margin-bottom: 28px;
+ }
+
+.bottomItemCenter{
+    box-sizing: border-box;
+    padding: 0 37px;
+    .ItemCentertop {
+       
+
+         p {
+            text-align: left;
+            font-size: 13px;
+            line-height: 23px;
+            margin-bottom: 22px;
+         }
+
+    }
+
+
+}
+
+.ItemCenterbottom {
+    box-sizing: border-box;
+    padding: 0 37px;
+    p {
+        margin-right: 10px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 32px;
+        float: left; 
+    }
+
+    .appcoin {
+        width:32px;
+        height: 32px;
+        margin-right: 15px;
+        float: left;
+        background: url(../images/bottomsprite.png),no-repeat,0;
+    }
+
+    .yanxuan {
+        background-position-y:-470px ;
+    }
+
+    .weixin {
+        background-position-y:-428px ;
+    }
+
+    .weibo {
+        background-position-y:-326px ;
+        margin: 0;
+    }
+}
+
+.bottomItemRight {
+    position: relative;
+    .QRcode {
+        width: 104px;
+        height: 104px;
+        background: #ccc;
+        position: absolute;
+        left: 129px;
+    }
+
+    p {
+        position: absolute;
+        top: 158px;
+        left: 120px;
+        color: #b4a078;
+        font-size: $page_size - 2;
+        margin-top: 3px;
+        text-align: center;
+    }
+}
+
+.footer {
+    width: $page_content;
+    height: 250px;
+    padding-top: 37px;
+    background-color: #414141;
+    box-sizing: border-box;
+
+    .footerMain {
+        @extend %box;
+        .footerMainList {
+            margin-bottom: 30px!important;
+            padding-left: 17px;
+            height: 51px;
+            // border-bottom: 1px solid #4f4f4f;
+            li {
+                float: left;
+                margin-left: 122px;
+            }
+
+            li:first-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+// .clear {
+//     @extend %clear;
+// }
+
+.innerlogo {
+    width: 50px;
+    height: 50px;
+    margin-right: 17px;
+    float: left;
+    background: url(../images/footersprite.png) no-repeat 0;  
+}
+
+.logo1 {
+    background-position-y:-134px ;
+}
+.logo2 {
+    background-position-y:-368px ;
+}
+.logo3 {
+    background-position-y:0 ;
+}
+.logo4 {
+    background-position-y:-195px ;
+}
+
+.innerTitle {
+    color: #fff;
+    font-size: $page_size + 4;
+    line-height: 51px;
+    float: left;
+}
+
+.hr {
+    height: 1px;
+    margin-bottom: 27px;
+    background-color: #4f4f4f;
+    border: 0;
+}
+
+.siteInfo{
+    .navInfo {
+        text-align: center;
+        a {
+            color: #999;
+            font-size: $page_size - 2;
+            text-decoration: none;
+
+        }
+        span {
+            padding: 0 13px;
+            color: #999;
+        }
+    }
+
+    .copyright{
+        text-align: center;
+        color: #999;
+        font-size: $page_size - 2;
+        margin: 15px 0;
+    }
+}

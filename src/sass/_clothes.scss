@@ -3,16 +3,21 @@
     margin: 60px auto 0;
 }
 
-.life {
+.clothes {
     position: relative;
 
 }
 
-.lifeTop {
+//数码家电
+// .digital {
+//     position: relative;
+
+// }
+.clothesTop {
     height: 48px;
     padding-bottom: 20px;
     box-sizing: border-box;
-    .lifeTopLeft {
+    .clothesTopLeft {
         float: left;
         .name{
             font-size: $page_size*2;
@@ -22,10 +27,10 @@
   
 }
 
-.lifeTopRight{
+.clothesTopRight{
     float: right;
 
-    .lifeList{
+    .clothesList{
         font-size: $page_size;
         padding-top: 14px;
         float: left;
@@ -49,7 +54,7 @@
     }
 }
 
-.lifeBanner {
+.clothesbanner {
     height: 310px;
     position: relative;
     margin-bottom: 20px;
@@ -95,27 +100,27 @@
         
     }
 
-    .lifeBanner-prev:hover{
+    .clothes-prev:hover{
         background-position: 0 -2561px;
     }
 
-    .lifeBanner-next:hover{
+    .clothes-next:hover{
         background-position: 0 -4687px;
     }
 
-    .lifeBanner-prev {
+    .clothes-prev {
         left: 150px;
         background: url(../images/xuebi.png) no-repeat 0 -2622px;
     }
 
-    .lifeBanner-next {
+    .clothes-next {
         right: 150px;
         background: url(../images/xuebi.png) no-repeat 0 -4742px;
     }
 }
 
 
-.lifeBottom {
+.clothesBottom {
 overflow: hidden;
 
     ul {
@@ -123,8 +128,8 @@ overflow: hidden;
         li {
             width: 265px;
             float: left;
-            padding-bottom: 50px;
             margin-right: 10px;
+            padding-bottom: 50px;
         
             a {
                 width: 265px;
@@ -162,7 +167,7 @@ overflow: hidden;
                     margin-top: 5px;
                 }
 
-                .lifePrice {
+                .clothesPrice {
                     font-size: $page_size;
                     color: #fff;
                     font-weight: 700;
@@ -190,10 +195,10 @@ overflow: hidden;
     }
 
 
-.lifeInfo {
+.clothesInfo {
     width: 100%;
     margin-top: 10px;
-    .lifeItem {
+    .clothesItem {
         width: 70px;
         height: 20px;
         padding:5px 0;
@@ -207,7 +212,7 @@ overflow: hidden;
 
     h4 {
         width: 166px;
-        margin: 4px auto;
+        margin: 5px auto;
         max-height: 40px;
         line-height: 20px;
         display: -webkit-box;

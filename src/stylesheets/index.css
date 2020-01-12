@@ -65,13 +65,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 9, ../sass/index.scss */
-#top .header .headerCenter, #top .nav, #bigPromotionModule .bigPromotionMain, #newProducts, #selectionHome {
+#top .header .headerCenter, #top .nav, #bigPromotionModule .bigPromotionMain, #newProducts, #selectionHome, #bottom .bottomItem .bottomItemMain, .footer .footerMain {
   width: 1090px;
   margin: 0 auto;
 }
 
-/* line 15, ../sass/index.scss */
-#banner .stick, .lifeBanner .stick {
+/* line 14, ../sass/index.scss */
+.banner .stick, .lifeBanner .stick, .clothesbanner .stick {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -335,24 +335,63 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-right: 0;
 }
 
-/* line 1, ../sass/_banner.scss */
-#banner {
-  width: 100%;
-  height: 330px;
+/* line 32, ../sass/_banner.scss */
+.banner {
+  height: 310px;
   position: relative;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
-/* line 19, ../sass/_banner.scss */
-#banner .stick-prev {
-  left: 150px;
+/* line 37, ../sass/_banner.scss */
+.banner ul li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
 }
-/* line 23, ../sass/_banner.scss */
-#banner .stick-next {
-  right: 150px;
-}
-/* line 27, ../sass/_banner.scss */
-#banner img {
+/* line 42, ../sass/_banner.scss */
+.banner ul li img {
+  display: block;
   width: 100%;
+}
+/* line 49, ../sass/_banner.scss */
+.banner ol {
+  position: absolute;
+  bottom: 10px;
+  left: 664px;
+}
+/* line 54, ../sass/_banner.scss */
+.banner ol li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 0 8px;
+  background: #fff;
+  border-radius: 50%;
+  text-indent: -99999px;
+  cursor: pointer;
+}
+/* line 65, ../sass/_banner.scss */
+.banner ol .active {
+  box-shadow: 0 0 0 4px #dfcead;
+  background: #a7936e;
+}
+/* line 78, ../sass/_banner.scss */
+.banner .stick-prev:hover {
+  background-position: 0 -2561px;
+}
+/* line 82, ../sass/_banner.scss */
+.banner .stick-next:hover {
+  background-position: 0 -4687px;
+}
+/* line 86, ../sass/_banner.scss */
+.banner .stick-prev {
+  left: 150px;
+  background: url(../images/xuebi.png) no-repeat 0 -2622px;
+}
+/* line 91, ../sass/_banner.scss */
+.banner .stick-next {
+  right: 150px;
+  background: url(../images/xuebi.png) no-repeat 0 -4742px;
 }
 
 /* line 1, ../sass/_bigPromotionModule.scss */
@@ -600,20 +639,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: 20px;
 }
 
-/* line 26, ../sass/_louti.scss */
+/* line 25, ../sass/_louti.scss */
 .lifeTopRight {
   float: right;
 }
-/* line 29, ../sass/_louti.scss */
+/* line 28, ../sass/_louti.scss */
 .lifeTopRight .lifeList {
   font-size: 14px;
   padding-top: 14px;
   float: left;
 }
-/* line 33, ../sass/_louti.scss */
+/* line 32, ../sass/_louti.scss */
 .lifeTopRight .lifeList a {
   font-size: 14px;
   text-decoration: none;
+  color: #000;
 }
 /* line 38, ../sass/_louti.scss */
 .lifeTopRight .lifeList span {
@@ -630,55 +670,97 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 52, ../sass/_louti.scss */
 .lifeBanner {
+  height: 310px;
   position: relative;
   margin-bottom: 20px;
 }
-/* line 54, ../sass/_louti.scss */
-.lifeBanner img {
+/* line 57, ../sass/_louti.scss */
+.lifeBanner ul li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+}
+/* line 62, ../sass/_louti.scss */
+.lifeBanner ul li img {
+  display: block;
   width: 100%;
 }
-/* line 63, ../sass/_louti.scss */
+/* line 69, ../sass/_louti.scss */
+.lifeBanner ol {
+  position: absolute;
+  bottom: 10px;
+  left: 525px;
+}
+/* line 74, ../sass/_louti.scss */
+.lifeBanner ol li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 0 8px;
+  background: #fff;
+  border-radius: 50%;
+  text-indent: -99999px;
+  cursor: pointer;
+}
+/* line 85, ../sass/_louti.scss */
+.lifeBanner ol .active {
+  box-shadow: 0 0 0 4px #dfcead;
+  background: #a7936e;
+}
+/* line 98, ../sass/_louti.scss */
+.lifeBanner .lifeBanner-prev:hover {
+  background-position: 0 -2561px;
+}
+/* line 102, ../sass/_louti.scss */
+.lifeBanner .lifeBanner-next:hover {
+  background-position: 0 -4687px;
+}
+/* line 106, ../sass/_louti.scss */
 .lifeBanner .lifeBanner-prev {
   left: 150px;
+  background: url(../images/xuebi.png) no-repeat 0 -2622px;
 }
-/* line 67, ../sass/_louti.scss */
+/* line 111, ../sass/_louti.scss */
 .lifeBanner .lifeBanner-next {
   right: 150px;
+  background: url(../images/xuebi.png) no-repeat 0 -4742px;
 }
 
-/* line 73, ../sass/_louti.scss */
+/* line 118, ../sass/_louti.scss */
 .lifeBottom {
   overflow: hidden;
 }
-/* line 76, ../sass/_louti.scss */
-.lifeBottom .lifeList {
+/* line 121, ../sass/_louti.scss */
+.lifeBottom ul {
   width: 2000px;
 }
-/* line 78, ../sass/_louti.scss */
-.lifeBottom .lifeList li {
+/* line 123, ../sass/_louti.scss */
+.lifeBottom ul li {
   width: 265px;
   float: left;
+  padding-bottom: 50px;
   margin-right: 10px;
 }
-/* line 83, ../sass/_louti.scss */
-.lifeBottom .lifeList li a {
+/* line 129, ../sass/_louti.scss */
+.lifeBottom ul li a {
   width: 265px;
   height: 265px;
   display: inline-block;
   position: relative;
   background: #f4f4f4;
 }
-/* line 91, ../sass/_louti.scss */
-.lifeBottom .lifeList li .nianhuojie {
+/* line 137, ../sass/_louti.scss */
+.lifeBottom ul li .nianhuojie {
   width: 48px;
   height: 48px;
   left: 6px;
   top: 6px;
   position: absolute;
 }
-/* line 99, ../sass/_louti.scss */
-.lifeBottom .lifeList li .priceInfo {
-  width: 48px;
+/* line 145, ../sass/_louti.scss */
+.lifeBottom ul li .priceInfo {
+  width: 60px;
   height: 36px;
   padding-left: 8px;
   padding-right: 14px;
@@ -689,15 +771,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: darkred;
   border-top-right-radius: 10px;
 }
-/* line 112, ../sass/_louti.scss */
-.lifeBottom .lifeList li .priceInfo p {
+/* line 158, ../sass/_louti.scss */
+.lifeBottom ul li .priceInfo p {
   font-size: 12px;
   color: #fff;
   text-align: center;
   margin-top: 5px;
 }
-/* line 119, ../sass/_louti.scss */
-.lifeBottom .lifeList li .priceInfo .lifePrice {
+/* line 165, ../sass/_louti.scss */
+.lifeBottom ul li .priceInfo .lifePrice {
   font-size: 14px;
   color: #fff;
   font-weight: 700;
@@ -705,8 +787,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   margin-top: 5px;
 }
-/* line 129, ../sass/_louti.scss */
-.lifeBottom .lifeList li .qianggou {
+/* line 175, ../sass/_louti.scss */
+.lifeBottom ul li .qianggou {
   width: 265px;
   height: 30px;
   background: red;
@@ -718,13 +800,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 30px;
   text-indent: 85px;
 }
-/* line 147, ../sass/_louti.scss */
+/* line 193, ../sass/_louti.scss */
 .lifeBottom .lifeInfo {
   width: 100%;
+  margin-top: 10px;
 }
-/* line 149, ../sass/_louti.scss */
+/* line 196, ../sass/_louti.scss */
 .lifeBottom .lifeInfo .lifeItem {
-  width: 58px;
+  width: 70px;
   height: 20px;
   padding: 5px 0;
   color: #fff;
@@ -734,10 +817,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   line-height: 20px;
 }
-/* line 161, ../sass/_louti.scss */
+/* line 208, ../sass/_louti.scss */
 .lifeBottom .lifeInfo h4 {
   width: 166px;
-  margin: 0 auto 4px;
+  margin: 4px auto;
   max-height: 40px;
   line-height: 20px;
   display: -webkit-box;
@@ -745,49 +828,526 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #000;
   text-align: center;
 }
-/* line 172, ../sass/_louti.scss */
+/* line 219, ../sass/_louti.scss */
 .lifeBottom .lifeInfo .PriceItem {
   height: 13px;
   text-align: center;
   padding-bottom: 9px;
 }
-/* line 176, ../sass/_louti.scss */
+/* line 223, ../sass/_louti.scss */
 .lifeBottom .lifeInfo .PriceItem .salePrice {
   color: #d4282d;
 }
-/* line 180, ../sass/_louti.scss */
+/* line 227, ../sass/_louti.scss */
 .lifeBottom .lifeInfo .PriceItem .originalPrice {
   color: #999;
   font-size: 12px;
 }
 
-/* line 41, ../sass/index.scss */
+/* line 1, ../sass/_clothes.scss */
+#louti {
+  width: 1090px;
+  margin: 60px auto 0;
+}
+
+/* line 6, ../sass/_clothes.scss */
+.clothes {
+  position: relative;
+}
+
+/* line 16, ../sass/_clothes.scss */
+.clothesTop {
+  height: 48px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+/* line 20, ../sass/_clothes.scss */
+.clothesTop .clothesTopLeft {
+  float: left;
+}
+/* line 22, ../sass/_clothes.scss */
+.clothesTop .clothesTopLeft .name {
+  font-size: 28px;
+  margin-right: 20px;
+}
+
+/* line 30, ../sass/_clothes.scss */
+.clothesTopRight {
+  float: right;
+}
+/* line 33, ../sass/_clothes.scss */
+.clothesTopRight .clothesList {
+  font-size: 14px;
+  padding-top: 14px;
+  float: left;
+}
+/* line 37, ../sass/_clothes.scss */
+.clothesTopRight .clothesList a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+}
+/* line 43, ../sass/_clothes.scss */
+.clothesTopRight .clothesList span {
+  margin: 0 13px;
+  font-size: 14px;
+}
+/* line 49, ../sass/_clothes.scss */
+.clothesTopRight .more {
+  font-size: 14px;
+  padding-top: 14px;
+  margin-left: 30px;
+  float: right;
+}
+
+/* line 57, ../sass/_clothes.scss */
+.clothesbanner {
+  height: 310px;
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 62, ../sass/_clothes.scss */
+.clothesbanner ul li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+}
+/* line 67, ../sass/_clothes.scss */
+.clothesbanner ul li img {
+  display: block;
+  width: 100%;
+}
+/* line 74, ../sass/_clothes.scss */
+.clothesbanner ol {
+  position: absolute;
+  bottom: 10px;
+  left: 525px;
+}
+/* line 79, ../sass/_clothes.scss */
+.clothesbanner ol li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 0 8px;
+  background: #fff;
+  border-radius: 50%;
+  text-indent: -99999px;
+  cursor: pointer;
+}
+/* line 90, ../sass/_clothes.scss */
+.clothesbanner ol .active {
+  box-shadow: 0 0 0 4px #dfcead;
+  background: #a7936e;
+}
+/* line 103, ../sass/_clothes.scss */
+.clothesbanner .clothes-prev:hover {
+  background-position: 0 -2561px;
+}
+/* line 107, ../sass/_clothes.scss */
+.clothesbanner .clothes-next:hover {
+  background-position: 0 -4687px;
+}
+/* line 111, ../sass/_clothes.scss */
+.clothesbanner .clothes-prev {
+  left: 150px;
+  background: url(../images/xuebi.png) no-repeat 0 -2622px;
+}
+/* line 116, ../sass/_clothes.scss */
+.clothesbanner .clothes-next {
+  right: 150px;
+  background: url(../images/xuebi.png) no-repeat 0 -4742px;
+}
+
+/* line 123, ../sass/_clothes.scss */
+.clothesBottom {
+  overflow: hidden;
+}
+/* line 126, ../sass/_clothes.scss */
+.clothesBottom ul {
+  width: 2000px;
+}
+/* line 128, ../sass/_clothes.scss */
+.clothesBottom ul li {
+  width: 265px;
+  float: left;
+  margin-right: 10px;
+  padding-bottom: 50px;
+}
+/* line 134, ../sass/_clothes.scss */
+.clothesBottom ul li a {
+  width: 265px;
+  height: 265px;
+  display: inline-block;
+  position: relative;
+  background: #f4f4f4;
+}
+/* line 142, ../sass/_clothes.scss */
+.clothesBottom ul li .nianhuojie {
+  width: 48px;
+  height: 48px;
+  left: 6px;
+  top: 6px;
+  position: absolute;
+}
+/* line 150, ../sass/_clothes.scss */
+.clothesBottom ul li .priceInfo {
+  width: 60px;
+  height: 36px;
+  padding-left: 8px;
+  padding-right: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: darkred;
+  border-top-right-radius: 10px;
+}
+/* line 163, ../sass/_clothes.scss */
+.clothesBottom ul li .priceInfo p {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+}
+/* line 170, ../sass/_clothes.scss */
+.clothesBottom ul li .priceInfo .clothesPrice {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+}
+/* line 180, ../sass/_clothes.scss */
+.clothesBottom ul li .qianggou {
+  width: 265px;
+  height: 30px;
+  background: red;
+  color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  line-height: 30px;
+  text-indent: 85px;
+}
+/* line 198, ../sass/_clothes.scss */
+.clothesBottom .clothesInfo {
+  width: 100%;
+  margin-top: 10px;
+}
+/* line 201, ../sass/_clothes.scss */
+.clothesBottom .clothesInfo .clothesItem {
+  width: 70px;
+  height: 20px;
+  padding: 5px 0;
+  color: #fff;
+  font-size: 12px;
+  background-color: #e36844;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 20px;
+}
+/* line 213, ../sass/_clothes.scss */
+.clothesBottom .clothesInfo h4 {
+  width: 166px;
+  margin: 5px auto;
+  max-height: 40px;
+  line-height: 20px;
+  display: -webkit-box;
+  overflow: hidden;
+  color: #000;
+  text-align: center;
+}
+/* line 224, ../sass/_clothes.scss */
+.clothesBottom .clothesInfo .PriceItem {
+  height: 13px;
+  text-align: center;
+  padding-bottom: 9px;
+}
+/* line 228, ../sass/_clothes.scss */
+.clothesBottom .clothesInfo .PriceItem .salePrice {
+  color: #d4282d;
+}
+/* line 232, ../sass/_clothes.scss */
+.clothesBottom .clothesInfo .PriceItem .originalPrice {
+  color: #999;
+  font-size: 12px;
+}
+
+/* line 1, ../sass/_selectionHome.scss */
 #selectionHome {
+  margin-bottom: 80px;
+}
+/* line 4, ../sass/_selectionHome.scss */
+#selectionHome .selectionTop {
+  height: 48px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+/* line 8, ../sass/_selectionHome.scss */
+#selectionHome .selectionTop h3 {
+  font-size: 28px;
+  font-weight: 700;
+  float: left;
+  margin-right: 20px;
+}
+/* line 14, ../sass/_selectionHome.scss */
+#selectionHome .selectionTop span {
+  display: inline-block;
+  font-size: 14px;
+  padding-top: 13px;
+}
+/* line 22, ../sass/_selectionHome.scss */
+#selectionHome .selectionBottom {
+  height: 380px;
+}
+/* line 24, ../sass/_selectionHome.scss */
+#selectionHome .selectionBottom a {
+  display: inline-block;
+  float: left;
+}
+
+/* line 1, ../sass/_bottom.scss */
+#bottom {
+  width: 100%;
+}
+/* line 3, ../sass/_bottom.scss */
+#bottom .bottomItem {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+}
+/* line 6, ../sass/_bottom.scss */
+#bottom .bottomItem .bottomItemMain {
+  padding-top: 60px;
+  padding-bottom: 34px;
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/_bottom.scss */
+.bottomList {
+  height: 204px;
+}
+/* line 19, ../sass/_bottom.scss */
+.bottomList li {
+  width: 33.3%;
+  height: 204px;
+  float: left;
+  border-left: 1px solid #e9e9e9;
+}
+/* line 26, ../sass/_bottom.scss */
+.bottomList .leftBox {
+  text-align: center;
+}
+/* line 30, ../sass/_bottom.scss */
+.bottomList li:first-child {
+  border: 0;
+}
+/* line 34, ../sass/_bottom.scss */
+.bottomList .bottomItemLeft a {
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+  padding-top: 25px;
+  text-align: center;
+  border: 1px solid #E8E8E8;
+  box-sizing: border-box;
+  position: relative;
+  margin-right: 29px;
+}
+/* line 48, ../sass/_bottom.scss */
+.bottomList .coin {
+  width: 31px;
+  height: 26px;
+  position: absolute;
+  left: 25px;
+  text-align: center;
+}
+/* line 56, ../sass/_bottom.scss */
+.bottomList .online {
+  background: url(../images/bottomsprite.png) 0 -290px;
+}
+/* line 60, ../sass/_bottom.scss */
+.bottomList .feedback {
+  background: url(../images/bottomsprite.png) 0 -98px;
+}
+/* line 64, ../sass/_bottom.scss */
+.bottomList .onlineServer {
+  position: absolute;
+  left: 12px;
+  top: 70px;
+  font-size: 14px;
+  color: #000;
+}
+
+/* line 75, ../sass/_bottom.scss */
+h4 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+/* line 82, ../sass/_bottom.scss */
+.bottomItemCenter {
+  box-sizing: border-box;
+  padding: 0 37px;
+}
+/* line 88, ../sass/_bottom.scss */
+.bottomItemCenter .ItemCentertop p {
+  text-align: left;
+  font-size: 13px;
+  line-height: 23px;
+  margin-bottom: 22px;
+}
+
+/* line 100, ../sass/_bottom.scss */
+.ItemCenterbottom {
+  box-sizing: border-box;
+  padding: 0 37px;
+}
+/* line 103, ../sass/_bottom.scss */
+.ItemCenterbottom p {
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 32px;
+  float: left;
+}
+/* line 111, ../sass/_bottom.scss */
+.ItemCenterbottom .appcoin {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  float: left;
+  background: url(../images/bottomsprite.png), no-repeat, 0;
+}
+/* line 119, ../sass/_bottom.scss */
+.ItemCenterbottom .yanxuan {
+  background-position-y: -470px;
+}
+/* line 123, ../sass/_bottom.scss */
+.ItemCenterbottom .weixin {
+  background-position-y: -428px;
+}
+/* line 127, ../sass/_bottom.scss */
+.ItemCenterbottom .weibo {
+  background-position-y: -326px;
+  margin: 0;
+}
+
+/* line 133, ../sass/_bottom.scss */
+.bottomItemRight {
+  position: relative;
+}
+/* line 135, ../sass/_bottom.scss */
+.bottomItemRight .QRcode {
+  width: 104px;
+  height: 104px;
   background: #ccc;
+  position: absolute;
+  left: 129px;
+}
+/* line 143, ../sass/_bottom.scss */
+.bottomItemRight p {
+  position: absolute;
+  top: 158px;
+  left: 120px;
+  color: #b4a078;
+  font-size: 12px;
+  margin-top: 3px;
+  text-align: center;
 }
 
-/* line 46, ../sass/index.scss */
-#Comment {
+/* line 154, ../sass/_bottom.scss */
+.footer {
   width: 100%;
-  height: 100px;
-  background: #333;
+  height: 250px;
+  padding-top: 37px;
+  background-color: #414141;
+  box-sizing: border-box;
+}
+/* line 163, ../sass/_bottom.scss */
+.footer .footerMain .footerMainList {
+  margin-bottom: 30px !important;
+  padding-left: 17px;
+  height: 51px;
+}
+/* line 168, ../sass/_bottom.scss */
+.footer .footerMain .footerMainList li {
+  float: left;
+  margin-left: 122px;
+}
+/* line 173, ../sass/_bottom.scss */
+.footer .footerMain .footerMainList li:first-child {
+  margin: 0;
 }
 
-/* line 52, ../sass/index.scss */
-#selectionHome {
-  background: #5c5c5c;
+/* line 184, ../sass/_bottom.scss */
+.innerlogo {
+  width: 50px;
+  height: 50px;
+  margin-right: 17px;
+  float: left;
+  background: url(../images/footersprite.png) no-repeat 0;
 }
 
-/* line 58, ../sass/index.scss */
-.footer1 {
-  width: 100%;
-  height: 100px;
-  background: #ffffff;
+/* line 192, ../sass/_bottom.scss */
+.logo1 {
+  background-position-y: -134px;
 }
 
-/* line 65, ../sass/index.scss */
-.footer2 {
-  width: 100%;
-  height: 100px;
-  background: #999;
+/* line 195, ../sass/_bottom.scss */
+.logo2 {
+  background-position-y: -368px;
+}
+
+/* line 198, ../sass/_bottom.scss */
+.logo3 {
+  background-position-y: 0;
+}
+
+/* line 201, ../sass/_bottom.scss */
+.logo4 {
+  background-position-y: -195px;
+}
+
+/* line 205, ../sass/_bottom.scss */
+.innerTitle {
+  color: #fff;
+  font-size: 18px;
+  line-height: 51px;
+  float: left;
+}
+
+/* line 212, ../sass/_bottom.scss */
+.hr {
+  height: 1px;
+  margin-bottom: 27px;
+  background-color: #4f4f4f;
+  border: 0;
+}
+
+/* line 220, ../sass/_bottom.scss */
+.siteInfo .navInfo {
+  text-align: center;
+}
+/* line 222, ../sass/_bottom.scss */
+.siteInfo .navInfo a {
+  color: #999;
+  font-size: 12px;
+  text-decoration: none;
+}
+/* line 228, ../sass/_bottom.scss */
+.siteInfo .navInfo span {
+  padding: 0 13px;
+  color: #999;
+}
+/* line 234, ../sass/_bottom.scss */
+.siteInfo .copyright {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  margin: 15px 0;
 }

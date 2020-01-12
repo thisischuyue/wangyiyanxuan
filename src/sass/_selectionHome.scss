@@ -1,0 +1,29 @@
+#selectionHome {
+    @extend %box;
+    margin-bottom: 80px;
+    .selectionTop {
+        height: 48px;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+        h3 {
+            font-size: $page_size*2;
+            font-weight: 700;
+            float: left;
+            margin-right: 20px;
+        }
+        span {
+            display: inline-block;
+            font-size: $page_size;
+            padding-top: 13px;
+
+        }
+    }
+
+    .selectionBottom {
+        height: 380px;
+        a {
+            display: inline-block;
+            float: left;
+        }
+    }
+}

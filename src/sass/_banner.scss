@@ -1,30 +1,95 @@
-#banner {
-    width:$page_content;
-    height: 330px;
+// #banner {
+//     width:$page_content;
+//     height: 330px;
+//     position: relative;
+//     // margin: 0 auto;
+//     .stick {
+//         // width: 50px;
+//         // height: 50px;
+//         // position: absolute;
+//         // top: 140px;
+//         // cursor: pointer;
+//         // opacity: 0.8;
+//         // background-color: #E2C199;
+//         // border-radius: 50%;
+//         @extend %arrow;
+//     }
+
+
+//     .stick-prev {
+//         left:150px;
+//     }
+
+//     .stick-next {
+//         right:150px;
+//     }
+
+//     img {
+//         width: 100%;
+//     }
+// }
+
+.banner {
+    height: 310px;
     position: relative;
-    margin: 0 auto;
-    .stick {
-        // width: 50px;
-        // height: 50px;
-        // position: absolute;
-        // top: 140px;
-        // cursor: pointer;
-        // opacity: 0.8;
-        // background-color: #E2C199;
-        // border-radius: 50%;
-        @extend %arrow;
+    margin-bottom: 20px;
+    ul {
+        li {
+            position: absolute;
+            left:0px;
+            top:0px;
+            opacity: 0;    
+            img {
+                display: block;
+                width: 100%;
+            }                                                                                              
+        }
     }
 
+    ol {
+        position: absolute;
+        bottom: 10px;
+        left: 664px;
+        // text-align: center;
+        li{
+            float: left;
+			width: 8px;
+            height:8px;
+            margin: 0 8px;
+			background: #fff;
+			border-radius: 50%; 
+			text-indent: -99999px;
+			cursor: pointer;
+        }
+
+        .active {
+            box-shadow: 0 0 0 4px #dfcead;
+            background: #a7936e;
+        }
+    }
+    
+   
+
+    .stick {
+        @extend %arrow;
+        
+    }
+
+    .stick-prev:hover{
+        background-position: 0 -2561px;
+    }
+
+    .stick-next:hover{
+        background-position: 0 -4687px;
+    }
 
     .stick-prev {
-        left:150px;
+        left: 150px;
+        background: url(../images/xuebi.png) no-repeat 0 -2622px;
     }
 
     .stick-next {
-        right:150px;
-    }
-
-    img {
-        width: 100%;
+        right: 150px;
+        background: url(../images/xuebi.png) no-repeat 0 -4742px;
     }
 }
