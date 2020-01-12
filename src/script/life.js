@@ -5,6 +5,7 @@
     class Life {
         constructor() {
             this.lifeBottom = $('.lifeBottom');
+            // this.clothesBottom = $('.clothesBottom');
         }
 
         init() {
@@ -13,6 +14,7 @@
                 dataType: 'json'
             }).done((data) => {
                 // console.log(data);
+                // console.log(this.clothesBottom);
                 let $strhtml = "<ul>";
                 $.each(data, function (index, value) {
                     $strhtml += `
@@ -41,12 +43,13 @@
                 });
                 $strhtml += '</ul>';
                 this.lifeBottom.html($strhtml);
+                // this.clothesBottom.html($strhtml);
 
                 // let $lifeimage=$('.lifeimage');
                 // this.lifeBottom.on('hover', $lifeimage, function() {
                 // $lifeimage.src=
             });
-        
+
         }
 
         // clickImages() {
@@ -54,7 +57,7 @@
         //     this.lifeBottom.on('hover', $lifeimage, function() {
         //         $lifeimage.src=
         //   })
-        
+
         // }
     }
 
@@ -175,7 +178,7 @@
     var $banner = $('.clothesbanner');
     var $picli = $('.clothesbanner ul li');
     var $btnli = $('.clothesbanner ol li');
-    
+
     var $left = $('.clothes-prev');
     var $right = $('.clothes-next');
     var num = 0; //当前点击的索引

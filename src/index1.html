@@ -20,25 +20,25 @@
         <div class="header">
             <div class="headerCenter">
                 <div class="login">
-                    <a href="">登录</a>
+                    <a class="loginNav" href="">登录</a class="loginNav">
                     <span class="shuxian">|</span>
-                    <a href="">注册</a>
+                    <a  class="loginNav"href="">注册</a>
                     <span class="shuxian">|</span>
-                    <a href="">我的订单</a>
+                    <a class="loginNav" href="">我的订单</a>
                     <span class="shuxian">|</span>
-                    <a href="">会员</a>
+                    <a class="loginNav" href="">会员</a>
                     <span class="shuxian">|</span>
-                    <a href="">甄选家</a>
+                    <a class="loginNav" href="">甄选家</a>
                     <span class="shuxian">|</span>
-                    <a href="">企业采购
+                    <a class="loginNav" href="">企业采购
                         <i class="iconfont icon-xiajiantou"></i>
                     </a>
                     <span class="shuxian">|</span>
-                    <a href="">客户服务
+                    <a class="loginNav" href="">客户服务
                         <i class="iconfont icon-xiajiantou"></i>
                     </a>
                     <span class="shuxian">|</span>
-                    <a href="">
+                    <a class="loginNav" href="">
                         <i class="iconfont icon-shouji"></i>
                         APP</a>
                 </div>
@@ -53,12 +53,19 @@
                 </a>
             </div>
 
+            <!-- <div class="hotKeywordRow">
+                <a class="hotKeyword">年货送礼45元起</a>
+                <a class="hotKeyword">年货礼盒3折起</a>
+                <a class="hotKeyword">爆品秒杀低至0.1元</a>
+            </div> -->
 
             <div class="searchbox">
                 <span class="iconfont icon-fangdajing"></span>
-                <input type="text" name="" class="searchInput">
+                <input type="text" name="" class="searchInput" placeholder="全场叠加 每满400再减20">
                 <div class="searchButton">搜索</div>
-                <div class="hotKeywordListWrap">
+
+             
+                <!-- <div class="hotKeywordListWrap">
                     <div class="hotKeywordList">
                         <div class="hotKeywordRow">
                             <a class="hotKeyword">年货送礼45元起</a>
@@ -66,8 +73,8 @@
                             <a class="hotKeyword">爆品秒杀低至0.1元</a>
                         </div>
                     </div>
-                </div>
-                <div class="searchKeyword">全场叠加 每满400再减20</div>
+                </div> -->
+                <!-- <div class="searchKeyword">全场叠加 每满400再减20</div> -->
 
             </div>
 
@@ -79,41 +86,70 @@
                 <span class="Cartnum">0</span>
             </div>
 
-            <ul class="navtable">
-                <li>
-                    <a href="" class="navitem">首页</a>
-                </li>
-                <li>
-                    <a href="" class="navitem">居家生活</a>
-                </li>
-                <li>
-                    <a href="" class="navitem">鞋包服饰</a>
-                </li>
-                <li>
-                    <a href="" class="navitem">美食酒水</a>
-                </li>
-                <li>
-                    <a href="" class="navitem">个护清洁</a>
-                </li>
-                <li>
-                    <a href="" class="navitem">母婴亲子</a>
-                </li>
-                <li>
-                    <a href="" class="navitem">运动旅行</a>
-                </li>
-                <li>
-                    <a href="" class="navitem">数码家电</a>
-                </li>
-                <li>
-                    <a href="" class="navitem">全球特色</a>
-                </li>
-                <li>
-                    <a href="" class="navitem">为你严选</a>
-                </li>
-                <li>
-                    <a href="" class="navitem">众筹</a>
-                </li>
-            </ul>
+            <div class="navtable">
+                <ul class="navtableItem clear" style="overflow: hidden;">  
+                    <li>
+                        <a href="" class="navitem">首页</a>
+                    </li>
+                    <li>
+                        <a href="" class="navitem">居家生活
+                            
+                        </a>
+                        <div class="visibletable">
+                            <div class="visibletableItem">
+                                <h4>秋冬好物</h4>
+                                <ul style="overflow: hidden;" class="visiblelist">
+                                    <li class="visiblelistli">
+                                        <img class="visibletableImg" src="https://yanxuan.nosdn.127.net/be2bb1f481165edf97d46ba6f7ea9c11.png?quality=95&type=webp&imageView" alt="">
+                                        <span class="visibletabletitle">秋冬好物</span>
+                                    </li>
+
+                                    <li class="visiblelistli">
+                                        <img class="visibletableImg" src="https://yanxuan.nosdn.127.net/be2bb1f481165edf97d46ba6f7ea9c11.png?quality=95&type=webp&imageView" alt="">
+                                        <span class="visibletabletitle">秋冬好物</span>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                            <div class="visibletableItem"></div>
+                            <div class="visibletableItem"></div>
+                            <div class="visibletableItem"></div>
+                            <div class="visibletableItem"></div>
+                            <div class="visibletableItem"></div>
+                            <div class="visibletableItem"></div>
+                            <div class="visibletableItem"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="navitem">鞋包服饰</a>
+                    </li>
+                    <li>
+                        <a href="" class="navitem">美食酒水</a>
+                    </li>
+                    <li>
+                        <a href="" class="navitem">个护清洁</a>
+                    </li>
+                    <li>
+                        <a href="" class="navitem">母婴亲子</a>
+                    </li>
+                    <li>
+                        <a href="" class="navitem">运动旅行</a>
+                    </li>
+                    <li>
+                        <a href="" class="navitem">数码家电</a>
+                    </li>
+                    <li>
+                        <a href="" class="navitem">全球特色</a>
+                    </li>
+                    <li>
+                        <a href="" class="navitem">为你严选</a>
+                    </li>
+                    <li>
+                        <a href="" class="navitem">众筹</a>
+                    </li>
+                </ul>
+            </div>
+         
 
         </div>
     </div>

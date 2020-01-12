@@ -14,7 +14,7 @@
         }
     }
 
-    a{
+    .loginNav{
         @include inline-block;
         line-height: 36px;
         color: map-get($color, a);
@@ -37,7 +37,7 @@
 
     }
 
-    a:hover {
+    .loginNav:hover {
         color: map-get($color, d);
     }
 
@@ -46,6 +46,8 @@
         color: map-get($color, c);
         margin:0 10px;
     }
+
+
     .nav {
         @extend %box;
         height: 140px;
@@ -97,68 +99,6 @@
                 box-sizing:border-box;
             }
 
-           .searchKeyword {
-                position: absolute;
-                top: 12px;
-                left: 38px;
-                color: #999;
-                display: block;
-                line-height: 1;
-                cursor: text;
-                touch-action: none;
-                -ms-touch-action: none;
-                pointer-events: none;
-                -ms-pointer-events: none;
-                -webkit-user-select: none;
-                white-space: nowrap;
-                overflow: hidden;
-                width: 390px;
-                text-overflow: ellipsis;
-                font-size: 14px;
-                z-index: 2;
-            }
-
-            .hotKeywordListWrap {
-                width: 444px;
-                height: 18px;
-                margin-top: 46px;
-                margin-left: 8px;
-                overflow: hidden;
-
-                .hotKeywordList {
-                    height: 144px;
-                    position: relative;
-                    overflow: hidden;
-    
-                    .hotKeywordRow {
-                        height: 18px;
-                        line-height: 18px;
-                        margin-bottom: 18px;
-
-                        .hotKeyword {
-                            display: inline-block;
-                            color: #999;
-                            padding: 0 10px;
-                            border-right: 1px solid #ccc;
-                            cursor: pointer;
-                            line-height: $page_size - 2;
-                            text-overflow: ellipsis;
-                            overflow: hidden;
-                            white-space: nowrap;
-                            max-width: 444px;
-                            font-size: $page_size - 2;
-                        }
-
-                        .hotKeyword:last-child {
-                            border: 0;
-                        }
-                    }
-                }
-            }
-
-         
-
-            
             .searchButton {
                 width: 90px;
                 height: 38px;
@@ -175,6 +115,65 @@
             }
           
 
+        //    .searchKeyword {
+        //         position: absolute;
+        //         top: 12px;
+        //         left: 38px;
+        //         color: #999;
+        //         display: block;
+        //         line-height: 1;
+        //         cursor: text;
+        //         touch-action: none;
+        //         -ms-touch-action: none;
+        //         pointer-events: none;
+        //         -ms-pointer-events: none;
+        //         -webkit-user-select: none;
+        //         white-space: nowrap;
+        //         overflow: hidden;
+        //         width: 390px;
+        //         text-overflow: ellipsis;
+        //         font-size: 14px;
+        //         z-index: 2;
+        //     }
+     
+            // .hotKeywordListWrap {
+            //     width: 444px;
+            //     height: 18px;
+            //     margin-top: 46px;
+            //     margin-left: 8px;
+            //     overflow: hidden;
+
+            //     .hotKeywordList {
+            //         height: 144px;
+            //         position: relative;
+            //         overflow: hidden;
+    
+                  
+            //     }
+            // }
+
+         
+
+            
+         
+
+        }
+
+        .hotKeywordRow {
+            height: 18px;
+            // line-height: 18px;
+            .hotKeyword {
+                display: inline-block;
+                color: #999;
+                padding: 0 10px;
+                border-right: 1px solid #ccc;
+                cursor: pointer;
+                font-size: $page_size - 2;
+            }
+
+            .hotKeyword:last-child {
+                border: 0;
+            }
         }
 
 
@@ -223,37 +222,88 @@
             
         }
 
-        .navtable {
-         
-            font-weight: 700;
-            position: absolute;
-            bottom: 0px;
-            width: 100%;
+     
+    }
 
+    .navtable {  
+        font-weight: 700;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        .navtableItem{
             li {
                 float: left;
                 text-align: center;
-                padding: 0 26px;
-                font-size: 14px;
-
+                padding: 0 26px 5px; 
                 a {
                     display: block;
-                    // padding-bottom: 7px;
                     color: #000;
+                    font-size: $page_size;
+                    text-decoration: none;
                 }
             }
 
             li:first-child {
                 padding-left: 0;
             }
-
+    
             li:last-child {
                 padding-right: 0;
             }
+
+        }
+
+    }
+
+    .visibletable {
+        position: absolute;
+        width: 1202px;
+        height: 500px;
+        background: #fff;
+        left: -63px;
+        top: 19px;
+        z-index: 1;
+        padding: 14px 20px 0;
+        // display: none;
+ 
+    }
+
+    .visibletableItem {
+        width: 12.5%;
+      
+        background: red;
+        float: left;
+        h4 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 36px;
+            border-bottom: 1px solid #ddd;
         }
 
 
 
-     
+        
     }
+
+    .visiblelist {
+        .visiblelistli {
+            text-align: center;
+            .visibletableImg {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                vertical-align: middle;
+            }
+    
+            .visibletabletitle {
+                display: inline-block;
+                font-size: $page_size;
+                padding-left: 5px;
+                vertical-align: middle;
+            }
+        }
+       
+    }
+   
 }

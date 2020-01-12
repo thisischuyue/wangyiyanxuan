@@ -23,13 +23,13 @@ $page_color:#CC9756;
     
 }
 
-%clear {
-    content: "";
+.clear:after {
+    content: " ";
     height: 0;
-    clear: both;
     overflow: hidden;
     display: block;
     visibility: hidden;
+    clear: both;
 }
 
 
