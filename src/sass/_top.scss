@@ -178,6 +178,7 @@
 
 
         .shopcart {
+            display: block;
             position: relative;
             cursor: pointer;
             width: 134px;
@@ -190,6 +191,7 @@
             float: right;
             z-index: 4;
             box-sizing:border-box;
+            text-decoration: none;
 
             .icon-gouwuche {
                     width: 18px;
@@ -231,7 +233,7 @@
         bottom: 0px;
         width: 100%;
         .navtableItem{
-            li {
+            .navli {
                 float: left;
                 text-align: center;
                 padding: 0 26px 5px; 
@@ -241,13 +243,18 @@
                     font-size: $page_size;
                     text-decoration: none;
                 }
+                
             }
 
-            li:first-child {
+            .navli:hover .visibletable {
+                display: block;
+            }
+
+            .navli:first-child {
                 padding-left: 0;
             }
     
-            li:last-child {
+            .navli:last-child {
                 padding-right: 0;
             }
 
@@ -264,14 +271,14 @@
         top: 19px;
         z-index: 1;
         padding: 14px 20px 0;
-        // display: none;
+        display: none;
  
     }
 
     .visibletableItem {
         width: 12.5%;
       
-        background: red;
+       
         float: left;
         h4 {
             margin-bottom: 10px;

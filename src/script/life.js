@@ -2,29 +2,30 @@
 
 //居家生活数据渲染
 (function ($) {
-    class Life {
+    class Louti {
         constructor() {
-            this.lifeBottom = $('.lifeBottom');
+            this.loutiBottom = $('.loutiBottom');
             // this.clothesBottom = $('.clothesBottom');
         }
 
         init() {
+            console.log(this.loutiBottom);
             $.ajax({
                 url: 'http://10.31.152.20/wangyiyanxuan/php/life.php',
                 dataType: 'json'
             }).done((data) => {
-                // console.log(data);
-                // console.log(this.clothesBottom);
-                let $strhtml = "<ul>";
+                console.log(data);
+                console.log(this.loutiBottom);
+                let $strhtml = "<ul class='loutiList'>";
                 $.each(data, function (index, value) {
                     $strhtml += `
-                    <li>       
+                    <li class="loutili">       
                     <a href="details.html?sid=${value.sid}">
                         <img class="nianhuojie" src="https://yanxuan.nosdn.127.net/8eca8742856212e6dce5bad69f9eecb0.png" alt="">
-                        <img class="lifeimage" src="${value.url}" alt="">
+                        <img class="loutiimage" src="${value.url}" alt="">
                         <div class="priceInfo">
                             <p>年货限时购</p>
-                            <span class="lifePrice">¥989</span>
+                            <span class="loutiPrice">¥989</span>
                         </div>
     
                         <div class="qianggou">
@@ -32,8 +33,8 @@
                         </div>
                        
                     </a>
-                    <div class="lifeInfo">
-                        <div class="lifeItem">年货特惠</div>
+                    <div class="loutiInfo">
+                        <div class="loutiItem">年货特惠</div>
                         <h4>${value.title}</h4>
                         <div class="PriceItem">
                             <span class="salePrice">￥${value.price}</span>
@@ -42,7 +43,7 @@
                 </li>`;
                 });
                 $strhtml += '</ul>';
-                this.lifeBottom.html($strhtml);
+                this.loutiBottom.html($strhtml);
                 // this.clothesBottom.html($strhtml);
 
                 // let $lifeimage=$('.lifeimage');
@@ -61,7 +62,7 @@
         // }
     }
 
-    new Life().init();
+    new Louti().init();
 })(jQuery);
 
 

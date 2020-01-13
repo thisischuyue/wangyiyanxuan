@@ -2,7 +2,7 @@
     width: $page_content;
     .bottomItem {
         width: $page_content;
-        border: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
         .bottomItemMain {
             @extend %box;
             padding-top: 60px;

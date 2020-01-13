@@ -1,50 +1,32 @@
-// #banner {
-//     width:$page_content;
-//     height: 330px;
-//     position: relative;
-//     // margin: 0 auto;
-//     .stick {
-//         // width: 50px;
-//         // height: 50px;
-//         // position: absolute;
-//         // top: 140px;
-//         // cursor: pointer;
-//         // opacity: 0.8;
-//         // background-color: #E2C199;
-//         // border-radius: 50%;
-//         @extend %arrow;
-//     }
-
-
-//     .stick-prev {
-//         left:150px;
-//     }
-
-//     .stick-next {
-//         right:150px;
-//     }
-
-//     img {
-//         width: 100%;
-//     }
-// }
-
 .banner {
-    height: 310px;
+    // width: $page_content;
+    height: 332px;
+    // background: red;
+    max-width: 1519px;
+    margin: 0 auto;
     position: relative;
-    margin-bottom: 20px;
+   
     ul {
+        max-width: 1519px;
+        height: 332px;
+        margin: 0 auto;
+        position: relative;
         li {
             position: absolute;
             left:0px;
             top:0px;
             opacity: 0;    
             img {
-                display: block;
-                width: 100%;
+                display: inline-block;
+                width: auto;
+                height: 332px;
+             
             }                                                                                              
         }
     }
+
+  
+    
 
     ol {
         position: absolute;

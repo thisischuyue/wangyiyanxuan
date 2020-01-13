@@ -1,11 +1,12 @@
 #louti {
     width: $page_width;
-    margin: 60px auto 0;
+    margin: 0 auto;
+    // background-color: #f4f0ea;
 }
 
 .life {
     position: relative;
-
+   
 }
 
 .lifeTop {
@@ -115,12 +116,11 @@
 }
 
 
-.lifeBottom {
+.loutiBottom {
 overflow: hidden;
-
-    ul {
+    .loutiList {
         width: 2000px;
-        li {
+        .loutili {
             width: 265px;
             float: left;
             padding-bottom: 50px;
@@ -162,7 +162,7 @@ overflow: hidden;
                     margin-top: 5px;
                 }
 
-                .lifePrice {
+                .loutiPrice {
                     font-size: $page_size;
                     color: #fff;
                     font-weight: 700;
@@ -190,10 +190,10 @@ overflow: hidden;
     }
 
 
-.lifeInfo {
+.loutiInfo {
     width: 100%;
     margin-top: 10px;
-    .lifeItem {
+    .loutiItem {
         width: 70px;
         height: 20px;
         padding:5px 0;
