@@ -5,16 +5,12 @@ class Cartlist {
     init() {
         //1.获取本地存储
         if (localStorage.getItem('cartsid') && localStorage.getItem('cartnum')) {
-            console.log(localStorage.getItem('cartsid').split(','));
-            console.log(localStorage.getItem('cartnum').split(','));
             let csid = localStorage.getItem('cartsid').split(','); //sid
             let cnum = localStorage.getItem('cartnum').split(','); //数量
-            for (let i = 0; i < csid.length; i++) {
-           
+            for (let i = 0; i < csid.length; i++) {  
                 this.render(csid[i], cnum[i]);
             }
         }
-
         //调用全选方法。
         this.allselect();
         //值的改变
@@ -24,19 +20,18 @@ class Cartlist {
     }
     //2.渲染一条数据的方法
     render(sid, num) { //sid:当前渲染的购物车列表的编号，num:数量。
-
         $.ajax({
             url: 'http://10.31.152.20/wangyiyanxuan/php/life.php',
             dataType: 'json'
         }).done((data) => {
             $.each(data, (index, value) => {
                 if (sid == value.sid) {
-                    console.log(value)
-                  
+                    // console.log(value)
                     let $clonebox = $('.goods-item:hidden').clone(true, true);
+                    //  let $clonebox = $('.goods-item');
+
                     $clonebox.find('.goods-pic img').attr('src', value.url);
                     $clonebox.find('.goods-pic img').attr('sid', value.sid);
-                    console.log($clonebox.find('.goods-pic img'));
                     $clonebox.find('.goods-d-info a').html(value.title);
                     $clonebox.find('.b-price strong').html(value.price);
                     $clonebox.find('.quantity-form input').val(num);

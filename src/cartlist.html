@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stylesheets/cartlist.css">
 </head>
 <body>
+    
     <div id="top"></div>
     <div id="container" class="cart">
         <!--全部商品哪一行-->
@@ -94,7 +95,7 @@
                         <a href=""></a>
                     </div>
                     <div class="price-sum">
-                        <span class="txt">总价（不含运费）：</span>
+                        <span class="txt">总价：</span>
                         <span class="totalprice">￥0.00</span>
                         <span class="txt">已节省：</span>
                         <span class="totalsave">-￥0.00</span>
@@ -111,10 +112,14 @@
 
     <div id="bottom"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../dist/script/bundle.js" type="module"></script>
+
 
     <script>
         $('#top').load('./top.html');
         $('#bottom').load('./bottom.html');
     </script>
+
 </body>
 </html>
+

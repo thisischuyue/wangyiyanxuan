@@ -8,7 +8,7 @@ class Render {
             url: 'http://10.31.152.20/wangyiyanxuan/php/life.php',
             dataType: 'json'
         }).done((data) => { 
-            console.log(1234567) 
+    
             let $strhtml = "<ul class='loutiList'>";
             $.each(data, function (index, value) {
                 $strhtml += `

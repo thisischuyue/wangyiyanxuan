@@ -92,10 +92,10 @@ class Fangdajing {
             //求比例
             this.bili = this.bpic.outerWidth() / this.spic.outerWidth();
 
-            $(window).on('click', function (e) {
-                console.log(e.pageX)
-                console.log(e.pageY)
-            })
+            // $(window).on('click', function (e) {
+            //     console.log(e.pageX)
+            //     console.log(e.pageY)
+            // })
 
             //2.鼠标在小图中移动，小放跟随鼠标
             this.spic.on('mousemove', (e) => {
@@ -132,11 +132,11 @@ class Fangdajing {
         //4.点击对应的li切换缩放的图片
         //#list ul li:委托的元素
         //$(this):委托的元素。
-        this.ulmove.on('click', 'li', function () {
-            let $imgurl = $(this).find('img').attr('src');
-            _this.spic.find('img').attr('src', $imgurl);
-            _this.bpic.attr('src', $imgurl);
-        });
+        // this.ulmove.on('click', 'li', function () {
+        //     let $imgurl = $(this).find('img').attr('src');
+        //     _this.spic.find('img').attr('src', $imgurl);
+        //     _this.bpic.attr('src', $imgurl);
+        // });
 
 
         //5.点击左右箭头，进行图片运动
@@ -153,14 +153,17 @@ class Fangdajing {
             let $imgurl = $(this).find('img').attr('src');
             _this.spic.find('img').attr('src', $imgurl);
             _this.bpic.attr('src', $imgurl);
-            console.log($(this).find('img').outerWidth())
+            // console.log($(this).find('img').outerWidth())
         });
         let $num = 6;
 
         this.ulist.on('click', '#right', function () {
+      
+            let $linum = $(this).siblings('#list').find('ul li').size();
+          
+            let $liwidth = $(this).siblings('#list').find('li').outerWidth(true);
+           
 
-            let $linum = $(this).siblings('#list').find('ul li').length;
-            let $liwidth = $(this).siblings('#list').find('ul li').outerWidth(true);
             if ($linum <= $num) {
                 _this.right.css('color', '#fff');
             }
@@ -178,8 +181,8 @@ class Fangdajing {
 
         this.ulist.on('click', '#left', function () {
 
-            let $linum = $(this).siblings('#list').find('ul li').length;
-            let $liwidth = $(this).siblings('#list').find('ul li').outerWidth(true);
+            let $linum = $(this).siblings('#list').find('ul li').size();
+            let $liwidth = $(this).siblings('#list').find('li').outerWidth(true);
             if ($num > 6) {
                 $num--;
                 _this.right.css('color', '#333');
@@ -193,37 +196,7 @@ class Fangdajing {
         });
 
 
-        this.right.on('click', () => {
-            let $linum = $(this).siblings('#list').find('ul li').length;
-            let $liwidth = $(this).siblings('#list').find('ul li').outerWidth(true);
-            if ($linum.length > $num) {
-                $num++;
-                this.left.css('color', '#333');
-                if ($num === $linum) {
-                    this.right.css('color', '#fff');
-                }
-                this.ulmove.animate({
-                    left: -($num - 6) * $liwidth
-                });
-            }
-
-        });
-
-
-        this.left.on('click', () => {
-            let $liwidth = $(this).siblings('#list').find('ul li').outerWidth(true);
-            console.log($num);
-            if ($num > 6) {
-                $num--;
-                this.right.css('color', '#333');
-                if ($num === 6) {
-                    this.left.css('color', '#fff');
-                }
-                this.ulmove.animate({
-                    left: -($num - 6) * $liwidth
-                });
-            }
-        });
+       
     }
 }
 

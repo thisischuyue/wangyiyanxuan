@@ -2,6 +2,8 @@ class Login {
     constructor() {
         this.$username = $('input[name="loginname"]');
         this.$password = $('input[name="loginpassword"]');
+        // this.$username = $('input[name="name"]');
+        // this.$password = $('input[name="password"]');
     }
     init() {
         $('.login').on('click', () => {
@@ -15,7 +17,7 @@ class Login {
                 }
             }).done((result) => {
                 if (result) {
-                    location.href = 'index1.html';
+                    location.href = 'index.html';
                     localStorage.setItem('username', $('.username').val());
                 } else {
                     console.log('fail')

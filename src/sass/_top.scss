@@ -8,7 +8,7 @@
         .headerCenter {
             @extend %box;
             font-size: $page_size - 2;
-            .login {
+            .loginModule {
                 float: right;
             }
         }

@@ -107,7 +107,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 12px;
 }
 /* line 11, ../sass/_top.scss */
-#top .header .headerCenter .login {
+#top .header .headerCenter .loginModule {
   float: right;
 }
 /* line 17, ../sass/_top.scss */
@@ -636,6 +636,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .newProductsBottom .newProductsInfo .PriceItem .originalPrice {
   color: #999;
   font-size: 12px;
+}
+
+/* line 1, ../sass/stairs.scss */
+#stairs {
+  width: 60px;
+  position: fixed;
+  top: 200px;
+  left: 100px;
+}
+/* line 6, ../sass/stairs.scss */
+#stairs .stairsname {
+  list-style: none;
+  width: 60px;
+  height: 40px;
+  padding: 10px 0;
 }
 
 /* line 5, ../sass/_life.scss */
