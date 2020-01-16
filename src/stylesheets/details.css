@@ -21,6 +21,7 @@
 		.wrap {
 			float: left;
 			position: relative;
+			height: 560px;
 		}
 
 		#spic {
@@ -69,10 +70,11 @@
 		#ulist {
 			position: absolute;
 			left: 0px;
-			top: 430px;
-			width: 402px;
+			top: 420px;
+			width: 410px;
 			height: 56px;
 			overflow: hidden;
+		
 		}
 
 		#ulist a {
@@ -132,7 +134,7 @@
 
 
 		.goodsinfo {
-			margin: 100px 0 0 395px;
+			margin: 100px 100px 0 395px;
 		}
 
 		.goodsinfo-img {

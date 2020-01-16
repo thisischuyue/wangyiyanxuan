@@ -4,8 +4,8 @@ html,body {
 }
 
 .loginbox {
-    width: 450px;
-    height: 400px;
+    width: 550px;
+    height: 500px;
     background: #fff;
     position: absolute;
     top: 0;
@@ -39,11 +39,14 @@ form {
 }
 
 p {
-    width: 350px;
+    width: 400px;
     height: 48px;
     border: 1px solid #999;
-    margin: 20px auto ;
+    margin: 50px auto ;
 }
+
+
+
 
 
 
@@ -51,15 +54,26 @@ input {
     height: 40px;
     border: 0;
     width: 200px;
+    vertical-align: middle;
+    margin-top: 3px;
 }
 
-.tijiao {
+
+.login {
     display: block;
-    width: 350px;
+    width: 400px;
     height: 48px;
     background: #b4a078;
     font-size: 18px;
     line-height: 48px;
     border: 0;
     margin: 0 auto;
+}
+
+.hint {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    font-size: 12px;
+    vertical-align: middle;
 }
