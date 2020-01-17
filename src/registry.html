@@ -12,16 +12,16 @@
 <body>
     <div class="mask"></div>
     <div class="loginbox">
-        <h3>用户注册</h3>
+        <h3 class="loginboxtitle">用户注册</h3>
         <form action="http://10.31.152.20/wangyiyanxuan/php/registry.php" method="post" autocomplete="off">
-            <p><label for="">用户名称：</label><input type="text" name="username"><span></span></p>
-            <p><label for="">设置密码：</label><input type="password" name="password"></p>
-            <p><label for="">手机号码：</label><input type="text" name="telephpone"></p>
-            <p><label for="">电子邮箱：</label><input type="text" name="email"></p>
+            <p class="registrytable"><label for="">用户名称：</label><input class="registryinput" type="text" name="username"><span class="registryspan"></span></p>
+            <p class="registrytable"><label for="">设置密码：</label><input class="registryinput" type="password" name="password"></p>
+            <p class="registrytable"><label for="">手机号码：</label><input class="registryinput" type="text" name="telephpone"></p>
+            <p class="registrytable"><label for="">电子邮箱：</label><input class="registryinput" type="text" name="email"></p>
             <input  class="tijiao" type="submit" value="注册" name="submit">
         </form>
     </div>
-    <script src="../dist/script/bundle.js" type="module"></script>
+    <script src="../dist/script/bundle.js" type="module" id="current" page="registry"></script>
 
 
 

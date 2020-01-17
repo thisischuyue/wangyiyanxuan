@@ -79,7 +79,6 @@ module.exports = {
             }
         }),
         new HtmlWebpackPlugin({
-          
             filename: "bottom.html",
             template: "./src/bottom.html",
             chunks: ["bottom", "vendor"],

@@ -94,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../sass/_top.scss */
 #top {
-  height: 176px;
+  height: 180px;
 }
 /* line 4, ../sass/_top.scss */
 #top .header {
@@ -152,7 +152,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 51, ../sass/_top.scss */
 #top .nav {
-  height: 140px;
+  height: 120px;
   position: relative;
 }
 /* line 56, ../sass/_top.scss */
@@ -288,7 +288,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #top .navtable .navtableItem .navli {
   float: left;
   text-align: center;
-  padding: 0 26px 5px;
+  padding: 0 25px 5px;
 }
 /* line 240, ../sass/_top.scss */
 #top .navtable .navtableItem .navli a {
@@ -638,19 +638,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 12px;
 }
 
-/* line 1, ../sass/stairs.scss */
+/* line 1, ../sass/_stairs.scss */
 #stairs {
   width: 60px;
   position: fixed;
   top: 200px;
   left: 100px;
+  border: 1px,solid,#333;
 }
-/* line 6, ../sass/stairs.scss */
+/* line 7, ../sass/_stairs.scss */
 #stairs .stairsname {
   list-style: none;
   width: 60px;
   height: 40px;
   padding: 10px 0;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
 }
 
 /* line 5, ../sass/_life.scss */
@@ -681,28 +685,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 30, ../sass/_life.scss */
-.lifeTopRight {
+.lifeTopRightindex {
   float: right;
 }
 /* line 33, ../sass/_life.scss */
-.lifeTopRight .lifeList {
+.lifeTopRightindex .lifeList {
   font-size: 14px;
   padding-top: 14px;
   float: left;
 }
 /* line 37, ../sass/_life.scss */
-.lifeTopRight .lifeList a {
+.lifeTopRightindex .lifeList a {
   font-size: 14px;
   text-decoration: none;
   color: #000;
 }
 /* line 43, ../sass/_life.scss */
-.lifeTopRight .lifeList span {
+.lifeTopRightindex .lifeList span {
   margin: 0 13px;
   font-size: 14px;
 }
 /* line 49, ../sass/_life.scss */
-.lifeTopRight .more {
+.lifeTopRightindex .more {
   font-size: 14px;
   padding-top: 14px;
   margin-left: 30px;

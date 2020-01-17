@@ -38,7 +38,7 @@ form {
     margin-top: 50px;
 }
 
-p {
+.logintable {
     width: 400px;
     height: 48px;
     border: 1px solid #999;
@@ -46,11 +46,24 @@ p {
 }
 
 
+label {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #000;
+
+}
+
+.loginboxtitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    text-indent: 53px;
+    margin-top: 10px;
+}
 
 
 
-
-input {
+.logininput {
     height: 40px;
     border: 0;
     width: 200px;
@@ -77,3 +90,4 @@ input {
     font-size: 12px;
     vertical-align: middle;
 }
+

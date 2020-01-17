@@ -1,8 +1,12 @@
 class Cartlist {
     constructor() {
         this.itemlist = $('.item-list');
+        this.top=$('#top');
+        this.bottom=$('#bottom');
     }
     init() {
+        this.top.load('./top.html');
+        this.bottom.load('./bottom.html');
         //1.获取本地存储
         if (localStorage.getItem('cartsid') && localStorage.getItem('cartnum')) {
             let csid = localStorage.getItem('cartsid').split(','); //sid

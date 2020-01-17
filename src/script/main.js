@@ -3,8 +3,11 @@ import "jquery";
 import '../stylesheets/index.css';
 import '../stylesheets/details.css';
 import '../stylesheets/cartlist.css';
-// import '../stylesheets/login.css';
-// import '../stylesheets/registry.css';
+import '../stylesheets/login.css';
+import '../stylesheets/registry.css';
+
+const page = $('script').attr("page");
+console.log(page)
 import {
     Render
 } from './render.js';
@@ -28,16 +31,22 @@ import {
 } from './login.js';
 
 
-
-new Render().init();
-new Details().init();
-new Fangdajing().init();
-new Cartlist().init();
-new Registry().init();
-new Login().init();
-
-
-
+if (page == 'index') {
+    new Render().init();
+}
+if (page == 'details') {
+    new Details().init();
+    new Fangdajing().init();
+}
+if (page == 'cartlist') {
+    new Cartlist().init();
+}
+if (page == 'registry') {
+    new Registry().init();
+}
+if (page == 'login') {
+    new Login().init();
+}
 
 
 

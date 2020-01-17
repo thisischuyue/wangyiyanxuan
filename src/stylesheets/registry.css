@@ -38,7 +38,7 @@ form {
     margin-top: 50px;
 }
 
-p {
+.registrytable {
     width: 400px;
     height: 48px;
     border: 1px solid #999;
@@ -49,11 +49,20 @@ p {
 
 label {
     vertical-align: middle;
-   
+    font-size: 14px;
+    color: #000;
 
 }
 
-input {
+.loginboxtitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    text-indent: 53px;
+    margin-top: 10px;
+}
+
+.registryinput {
     height: 40px;
     border: 0;
     width: 200px;
@@ -72,7 +81,7 @@ input {
     margin: 0 auto;
 }
 
-span {
+.registryspan {
     display: inline-block;
     width: 100px;
     height: 20px;

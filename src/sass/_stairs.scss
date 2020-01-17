@@ -3,11 +3,15 @@
     position: fixed;
     top: 200px;
     left: 100px;
+    border: 1px,solid,#333;
     .stairsname {
         list-style: none;
         width: 60px;
         height: 40px;
         padding: 10px 0;
+        line-height: 40px;
+        font-size: $page_size;
+        text-align: center;
     }
 
 }
